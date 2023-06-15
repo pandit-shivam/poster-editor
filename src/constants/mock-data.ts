@@ -12,7 +12,7 @@ export const graphics = [
     path: [["M", 60, 0], ["L", 0, 0], ["L", 0, 60], ["L", 60, 60], ["L", 60, 0], ["Z"]],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/square.png?token=GHSAT0AAAAAAB5KXC3XSBFZOWXOALGF2E7QZEK7MNA",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/square.png?token=GHSAT0AAAAAAB5KXC3XEFLNN74QYJI6XLUEZEK7OGA",
     id: "E2mcHFkwGA-MTJcfl3Abs",
   },
   {
@@ -29,7 +29,7 @@ export const graphics = [
     fill: "#CBCBCB",
     metadata: {},
     id: "SY15tkntkk8S1PudoMfRI",
-    preview: "https://ik.imagekit.io/scenify/1635011631415_820612.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/triangle.png?token=GHSAT0AAAAAAB5KXC3XBVUKX5NAN27GXBX4ZEK7OOQ",
   },
   {
     left: 0,
@@ -67,7 +67,7 @@ export const graphics = [
     ],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635014101144_519480.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/hexagon.png?token=GHSAT0AAAAAAB5KXC3WRMZYJIXNMCEQIIGQZEK7OUA",
     id: "9VWsxoB_O8LSAkCIRjNFY",
   },
   {
@@ -134,7 +134,7 @@ export const graphics = [
     ],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635014130664_615881.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/star-sharp.png?token=GHSAT0AAAAAAB5KXC3XYSCHZX7HYFXAZCNKZEK7ORA",
     id: "fRmRlanl-hydswssHKhn6",
   },
   {
@@ -217,7 +217,7 @@ export const graphics = [
     ],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635014150489_628269.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/star-round.png?token=GHSAT0AAAAAAB5KXC3XE2DF6QCZKHTDJDW4ZEK7OSQ",
     id: "A8WLbfJFV1D58X1RUZADd",
   },
   {
@@ -304,7 +304,7 @@ export const graphics = [
     ],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635014314495_390592.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/bird.png?token=GHSAT0AAAAAAB5KXC3WZYQVDN56ZYQDSMICZEK7RXA",
     id: "0dwJMLuw8DK9jddPSapOV",
   },
   {
@@ -348,7 +348,7 @@ export const graphics = [
     ],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635014323800_275038.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/heart.png?token=GHSAT0AAAAAAB5KXC3WTFXI5HCP23MLEV4AZEK7OVA",
     id: "3w9KPQbyeUe3kgtwpMZx4",
   },
   {
@@ -481,7 +481,7 @@ export const graphics = [
     ],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635014340531_452464.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/thumbs-up.png?token=GHSAT0AAAAAAB5KXC3WOI55RCK4FMND2PS4ZEK7OQA",
     id: "vAE3f8-4M0-2j5PF04cVY",
   },
 ]
