@@ -12,7 +12,7 @@ export const graphics = [
     path: [["M", 60, 0], ["L", 0, 0], ["L", 0, 60], ["L", 60, 60], ["L", 60, 0], ["Z"]],
     fill: "#CBCBCB",
     metadata: {},
-    preview: "https://ik.imagekit.io/scenify/1635011325399_603749.png",
+    preview: "https://raw.githubusercontent.com/m-triple-m/poster-editor/master/elements/square.png?token=GHSAT0AAAAAAB5KXC3XSBFZOWXOALGF2E7QZEK7MNA",
     id: "E2mcHFkwGA-MTJcfl3Abs",
   },
   {
