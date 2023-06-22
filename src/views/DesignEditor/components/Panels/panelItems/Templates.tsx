@@ -14,17 +14,21 @@ import { IScene } from "@layerhub-io/types"
 import { nanoid } from "nanoid"
 import api from "~/services/api"
 import useEditorType from "~/hooks/useEditorType"
+import templateDesigns from "~/interfaces/designs"
 
 export default function () {
   const editor = useEditor()
   const setIsSidebarOpen = useSetIsSidebarOpen()
   const { setCurrentScene, currentScene, setScenes, setCurrentDesign } = useDesignEditorContext()
-  const designs = useSelector(selectPublicDesigns)
+  // const designs = useSelector(selectPublicDesigns)
+  const designs = templateDesigns;
+  console.log(designs);
+  
   const editorType = useEditorType()
   
   const loadGraphicTemplate = async (payload: IDesign): Promise<{ scenes: IScene[]; design: IDesign }> => {
-    const scenes: IScene[] = []
-    const { scenes: scns, ...design } = payload
+    const scenes: IScene[] = [];
+    const { scenes: scns, ...design } = payload;
 
     for (const scn of scns) {
       const scene: IScene = {
@@ -34,19 +38,22 @@ export default function () {
         layers: scn.layers,
         metadata: {},
       }
-      await loadTemplateFonts(scene)
+
+      await loadTemplateFonts(scene);
 
       const preview = (await editor.renderer.render(scene)) as string
       scenes.push({ ...scene, preview })
     }
-
     return { scenes, design: design as IDesign }
   }
 
   const loadDesignById = React.useCallback(
     async (designId: string) => {
       if (editor) {
-        const design = await api.getPublicDesignById(designId)
+        const design: any = designs.find(design => design.id === designId);
+        console.log(design);
+        
+        // const design = await api.getPublicDesignById(designId)
         const loadedDesign = await loadGraphicTemplate(design)
         setScenes(loadedDesign.scenes)
         setCurrentScene(loadedDesign.scenes[0])
@@ -76,15 +83,20 @@ export default function () {
       <Scrollable>
         <div style={{ padding: "0 1.5rem" }}>
           <div style={{ display: "grid", gap: "0.5rem", gridTemplateColumns: "1fr 1fr" }}>
+          
             {designs
-              .filter((d) => d.type === editorType)
+              // .filter((d) => d.type === editorType)
               .map((design, index) => {
                 return (
-                  <ImageItem
+                  <>
+                    <ImageItem
                     onClick={() => loadDesignById(design.id)}
                     key={index}
-                    preview={`${design.previews[0].src}?tr=w-320`}
+                    // preview={`${design.previews[0].src}?tr=w-320`}
+                    preview={`${design.previews[0].src}`}
                   />
+                  'where'
+                  </>
                 )
               })}
           </div>

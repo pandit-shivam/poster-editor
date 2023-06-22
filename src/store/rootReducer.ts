@@ -13,6 +13,7 @@ const rootReducer = combineReducers({
   resources: resourcesReducer,
   designs: designsReducer,
   components: componentsReducer,
+  
 })
 
 export type RootState = ReturnType<typeof rootReducer>
