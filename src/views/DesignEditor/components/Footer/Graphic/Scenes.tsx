@@ -35,6 +35,8 @@ const Scenes = () => {
   ]
 
   React.useEffect(() => {
+    console.log({ editor, scenes, currentScene });
+    
     if (editor && scenes && currentScene) {
       const isCurrentSceneLoaded = scenes.find((s) => s.id === currentScene?.id)
       if (!isCurrentSceneLoaded) {

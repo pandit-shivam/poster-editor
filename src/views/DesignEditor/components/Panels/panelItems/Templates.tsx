@@ -55,6 +55,8 @@ export default function () {
         
         // const design = await api.getPublicDesignById(designId)
         const loadedDesign = await loadGraphicTemplate(design)
+        console.log(loadedDesign);
+        
         setScenes(loadedDesign.scenes)
         setCurrentScene(loadedDesign.scenes[0])
         setCurrentDesign(loadedDesign.design)
@@ -95,7 +97,6 @@ export default function () {
                     // preview={`${design.previews[0].src}?tr=w-320`}
                     preview={`${design.previews[0].src}`}
                   />
-                  'where'
                   </>
                 )
               })}

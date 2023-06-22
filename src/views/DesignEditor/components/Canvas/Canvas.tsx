@@ -6,6 +6,8 @@ import ContextMenu from "../ContextMenu"
 
 const Canvas = () => {
   const { displayPlayback } = useDesignEditorContext()
+  // console.log(displayPlayback);
+  
   return (
     <div style={{ flex: 1, display: "flex", position: "relative" }}>
       {displayPlayback && <Playback />}

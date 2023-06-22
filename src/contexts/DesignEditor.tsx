@@ -1,5 +1,5 @@
 import { IScene } from "@layerhub-io/types"
-import React from "react"
+import React, { useEffect } from "react"
 import {ContextMenuSceneRequest, ContextMenuTimelineRequest, DesignType, IDesign} from "~/interfaces/DesignEditor"
 
 interface ISceneEditorContext {
@@ -75,6 +75,9 @@ export const DesignEditorContext = React.createContext<ISceneEditorContext>({
 })
 
 export const DesignEditorProvider = ({ children }: { children: React.ReactNode }) => {
+
+  
+  
   const [scenes, setScenes] = React.useState<IScene[]>([])
   const [currentScene, setCurrentScene] = React.useState<IScene | null>(null)
   const [currentDesign, setCurrentDesign] = React.useState<IDesign>({
@@ -131,5 +134,9 @@ export const DesignEditorProvider = ({ children }: { children: React.ReactNode }
     contextMenuSceneRequest,
     setContextMenuSceneRequest,
   }
+  useEffect(() => {
+    console.log(currentDesign);
+    
+  }, [currentPreview])
   return <DesignEditorContext.Provider value={context}>{children}</DesignEditorContext.Provider>
 }
