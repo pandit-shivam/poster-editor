@@ -265,10 +265,18 @@ class ApiService {
   getPixabayImages = (props: { query: string; perPage: number; page: number }): Promise<Resource[]> => {
     return new Promise(async (resolve, reject) => {
       try {
-        const { data } = await this.base.get(
-          `resources/pixabay/images?page=${props.page}&per_page=${props.perPage}&query=${props.query}`
-        )
-        resolve(data.images)
+        console.log(props);
+        
+        // const { data } = await this.base.get(
+        //   `resources/pixabay/images?page=${props.page}&per_page=${props.perPage}&query=${props.query}`
+        // )
+        const res = await fetch(`https://pixabay.com/api?key=37717380-ada241370d13506f59b96c324&q=${props.query}&per_page=${props.perPage}`);
+        console.log(res.status);
+        const data2 = await res.json();
+        console.log(data2);
+        
+        
+        // resolve(data.images)
       } catch (err) {
         reject(err)
       }
